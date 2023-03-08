@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //khi khai báo biến trong hàm không có từ khóa
+  // Tạo hàm tính tổng hai số a và b
+  function tongHaiSo(a, b) {
+    // Khai báo biến trong hàm
+    // mà không có từ khóa var
+    tong = a + b;
+    return tong;
+  }
+
+  var ketqua = tongHaiSo(5, 6);
+  console.log(ketqua); // Kết quả: 11
+  console.log(tong); // Kết quả: 11
+
+
+// biến cục bộ
+  // // Tạo hàm tính tổng hai số a và b
+  // function tongHaiSo(a, b) {
+  //   // Khai báo biến trong hàm
+  //   // mà không có từ khóa var
+  //   var tong = a + b;
+  //   return tong;
+  // }
+  //
+  // var ketqua = tongHaiSo(5, 6);
+  // console.log(ketqua); // Kết quả: 11
+  // console.log(tong); // Kết quả: error: Uncaught ReferenceError: tong is not defined
+</script>
+</body>
+</html>

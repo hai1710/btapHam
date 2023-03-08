@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// Tên biến cục bộ trùng tên với biến toàn cục
+    // Khai báo biến toàn cục
+    var tong = 12;
+
+    function tongHaiSo(a, b) {
+        // Khai báo biến cục bộ
+        var tong;
+        tong = a + b;
+        return tong;
+    }
+
+    var ketqua = tongHaiSo(5, 6);
+    console.log(ketqua); // Kết quả: 11
+    console.log(tong); // Kết quả: 12
+</script>
+</body>
+</html>

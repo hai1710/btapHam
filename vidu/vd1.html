@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var hoTen = "Ngô Trung";
+
+    function changeName() {
+        // Khai báo biến trong function
+        // mà không có từ khóa var
+        hoTen = "Nguyễn Văn A";
+    }
+
+    function showName() {
+        console.log(hoTen);
+    }
+
+    console.log(hoTen); // Ngô Trung
+
+    // Thay đổi hoTen
+    changeName();
+    showName(); // Nguyễn Văn A
+</script>
+</body>
+</html>
