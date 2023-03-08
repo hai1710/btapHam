@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let pi = 3.14;
+
+    function acreage(x) {
+        return x * x * pi;
+    }
+
+    function perimeter(x) {
+        return x * 2 * pi
+    }
+
+    let x = parseInt(prompt("nhập giá trị bán kính R: "))
+    document.write("diện tích hình tròn có bán kính " + x + " là " + acreage(x) + "<br>");
+    document.write("chu vị hình tròn có bán kính " + x + " là " + perimeter(x));
+</script>
+</body>
+</html>
