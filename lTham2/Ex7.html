@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function swap(a,b){
+    let temp = a;
+    a = b;
+    b = temp;
+    return a,b
+  }
+  let a = parseInt(prompt("nhập giá trị a"));
+  let b = parseInt(prompt("nhập giá trị của b:"))
+  document.write("giá trị của a = " + swap(b,a) + " ; b = " + swap(a,b))
+</script>
+</body>
+</html>
