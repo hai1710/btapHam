@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Min(a, b, c) {
+        if (a > b && a > c) {
+            if (b > c) {
+                return c
+            } else {
+                return b
+            }
+        } else {
+            return a
+        }
+    }
+
+    let a = parseInt(prompt("nhập giá trị của a:"));
+    let b = parseInt(prompt("nhập giá trị của b: "));
+    let c = parseInt(prompt("nhập giá trị của c: "));
+    document.write("số nhỏ nhất trong " + a + ", " + b + ", " + c + " là " + Min(a, b, c));
+</script>
+</body>
+</html>
