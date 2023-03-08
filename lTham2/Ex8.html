@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<input type="button" onclick="add_pr()" value="Add">
+<input type="button" onclick="display_un()" value="DisPlay">
+<br>
+<p id="result"></p>
+<script>
+    let arr = [];
+    let arr_un = [];
+    let i = 0;
+
+    function add_pr(x) {
+        x = document.getElementById("nhap").value;
+        arr[i] = x;
+        document.getElementById("nhap").value = "";
+        i++
+    }
+
+    function display_un() {
+        for (i = 0; i < arr.length; i++) {
+            arr_un.unshift(arr[i])
+        }
+        document.getElementById("result").innerHTML = arr_un
+    }
+</script>
+</body>
+</html>
